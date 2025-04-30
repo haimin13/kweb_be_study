@@ -1,11 +1,11 @@
 const express = require('express');
-const router = require('./router');
+//const router = require('./router');
 const port = 3000;
 
 const app = express();
 
 
-/*
+
 app.use((req, res, next) => {
     const randomNumber = Math.floor(Math.random() * 10);
     console.log(`Random Number: ${randomNumber}`);
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => res.send('GET /'));
 
 app.post('/', (req, res) => res.send('POST /'));
-*/
-app.use('/', router);
+
+//app.use('/', router);
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
